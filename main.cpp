@@ -5,8 +5,6 @@
 // window dimensions
 const GLint WIDTH = 800, HEIGHT = 600;
 
-int error(char *message);
-
 int main() 
 {
     // initialize GLFW
@@ -62,10 +60,4 @@ int main()
     }
 
     return 0;
-}
-
-int error(char *message) {
-    printf("%s", message);
-    glfwTerminate();
-    return 1;
 }
